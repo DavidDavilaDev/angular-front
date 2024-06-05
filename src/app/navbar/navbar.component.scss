@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #333;
-  color: #fff;
+  background-color: #33B2FF;
+  color: #313131;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   .navbar-brand {
     font-size: 24px;
@@ -12,13 +13,14 @@
 
   .letters {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
+    font-weight: bold;
   }
 
   .letters:hover {
-    color: #b4b4b4;
-    font-size: 26px;
+    color: rgb(242, 242, 242);
+    font-size: 20.7px;
   }
 
   body {
@@ -60,7 +62,7 @@
       left: 0;
       height: 100%;
       width: 200px; /* Ancho del sidebar */
-      background-color: #333;
+      background-color: #33b1ff89;
       color: #fff;
       transform: translateX(-100%); /* Oculta el sidebar por defecto */
       transition: transform 0.3s ease;
@@ -69,10 +71,27 @@
         transform: translateX(0); /* Muestra el sidebar al hacer clic en la hamburguesa */
       }
 
+      .letters {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      li:hover {
+        background-color: #69b2e089;
+      }
+
+      li {
+        align-items: center;
+        width: 100%;
+        padding: 15px 0px;
+      }
+
       ul {
         flex-direction: column;
         padding-top: 70px; /* Ajusta el espacio para evitar superposición con la barra superior y mostrar el logo */
         margin-top: -20px;
+        margin-left: -10px;
       }
     }
 
